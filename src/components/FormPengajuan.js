@@ -20,6 +20,11 @@ export function renderFormPengajuan(applicant) {
             value="${safe(applicant.phone)}" placeholder="08xxxxxxxxxx" />
         </div>
         <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required
+            value="${safe(applicant.email)}" placeholder="rendy@gmail.com" />
+        </div>
+        <div class="field">
           <label for="monthlyIncome">Penghasilan bulanan (Rp)</label>
           <input id="monthlyIncome" name="monthlyIncome" type="number" min="0" step="100000" required
             value="${safe(applicant.monthlyIncome)}" placeholder="5000000" />
